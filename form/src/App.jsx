@@ -1,14 +1,15 @@
 import React from "react";
+import InputForm from "./InputForm";
 
 
 const App=()=>
-{
+{  
     return(
-        <h2>Hello World!!</h2>
-
+       <InputForm />
     );
 
 }
+
 
 
 export default App;
