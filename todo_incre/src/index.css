@@ -12,7 +12,7 @@ code {
     monospace;
 }
 .main_div {
-  background: cornflowerblue;
+  background: rgb(18, 73, 177);
   width: 100%;
   height: 100vh;
   display: flex;
@@ -23,7 +23,7 @@ code {
 }
 .center_div {
   width: 25%;
-  height: 80vh;
+  height: 60vh;
   background-color: #f4f4f4;
   box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
@@ -34,6 +34,7 @@ h3 {
   background-color: crimson;
   padding: 10px;
   color: white;
+  font-size: 50px;
 }
 input {
   text-align: center;
@@ -57,7 +58,8 @@ button {
   font-size: 40px;
   border: none;
   outline: none;
-  margin-left: 10px;
+  margin-top: 100px;
+  margin-inline: 50px;
   box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
 }
 button:hover {
@@ -114,7 +116,7 @@ ol li {
   }
   .center_div {
     width: 75%;
-    height: 60vh;
+    height: 50vh;
     background-color: #f4f4f4;
     box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
@@ -139,16 +141,17 @@ ol li {
     outline: none;
   }
   button {
-    min-height: 40px;
-    width: 40px;
-    border-radius: 50%;
+    min-height: 35px;
+    width: 60px;
+    border-radius: 5px;
     border-color: transparent;
     background-color: crimson;
     color: white;
-    font-size: 40px;
+    font-size: 15px;
     border: none;
     outline: none;
-    margin-left: 10px;
+    margin-top: 100px;
+    margin-inline: 20px;
     box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
   }
   button:hover {
