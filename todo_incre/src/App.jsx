@@ -1,7 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 function App() {
   const [num, setNum] = useState(0);
+  useEffect(() => {
+    document.title = `You have incre/decre ${num}`;
+  });
   const incre = () => {
     setNum(num + 1);
   };
