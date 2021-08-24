@@ -6,19 +6,25 @@ import Form from "react-bootstrap/Form";
 import FormControl from "react-bootstrap/FormControl";
 import Button from "react-bootstrap/Button";
 import AddShoppingCartIcon from "@material-ui/icons/AddShoppingCart";
-import { Link, Route, Switch } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <>
       <Navbar className="Navbar" expand="lg">
         <Navbar.Brand>
-          <span style={{ fontSize: "35px", color: "Red" }}>E</span>
-          <span
-            style={{ fontSize: "30px", color: "white", fontFamily: "cursive" }}
-          >
-            picure
-          </span>
+          <Link to="/" style={{ textDecoration: "none" }}>
+            <span style={{ fontSize: "35px", color: "Red" }}>E</span>
+            <span
+              style={{
+                fontSize: "30px",
+                color: "white",
+                fontFamily: "cursive",
+              }}
+            >
+              picure
+            </span>
+          </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -64,6 +70,16 @@ const Header = () => {
               Search
             </Button>
             <AddShoppingCartIcon style={{ color: "white", fontSize: "40px" }} />
+            <Nav.Link>
+              <Link to="/login">
+                <Button
+                  variant="outline-success"
+                  style={{ color: "white", border: "1px solid white" }}
+                >
+                  Login
+                </Button>
+              </Link>
+            </Nav.Link>
           </Form>
         </Navbar.Collapse>
       </Navbar>

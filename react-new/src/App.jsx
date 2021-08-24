@@ -6,7 +6,9 @@ import Component from "./Body";
 import About from "./About";
 import Products from "./Products";
 import Contact from "./Contact";
+import Login from "./Login";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Error from "./Error";
 
 const App = () => {
   return (
@@ -17,6 +19,8 @@ const App = () => {
         <Route path="/contact" component={Contact} />
         <Route path="/about" component={About} />
         <Route path="/products" component={Products} />
+        <Route path="/login" component={Login} />
+        <Route /*path="/error/:fname"*/ component={Error} />
       </Switch>
       <Footer />
     </>
